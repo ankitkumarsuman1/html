@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit Kumar Suman | Software Developer</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background: #050505; color: #ffffff; line-height: 1.6; scroll-behavior: smooth; overflow-x: hidden; }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        ul { list-style: none; }
+        
+        .highlight { 
+            background: linear-gradient(45deg, #00d4ff, #00ff88); 
+            -webkit-background-clip: text; 
+            background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            font-weight: 700;
+        }
+        
+        .btn { 
+            display: inline-flex; align-items: center; gap: 8px; padding: 12px 35px; 
+            background: linear-gradient(45deg, #00d4ff, #007bff); color: #fff; 
+            border-radius: 50px; font-weight: 600; cursor: pointer; border: none; 
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3); transition: all 0.3s ease; 
+        }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0, 212, 255, 0.5); }
+
+        /* Navigation */
+        .navbar { position: fixed; width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 20px 8%; background: rgba(5, 5, 5, 0.85); backdrop-filter: blur(12px); z-index: 1000; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .logo { font-size: 1.6rem; font-weight: 700; }
+        .nav-links { display: flex; }
+        .nav-links li { margin-left: 35px; }
+        .nav-links a:hover { color: #00d4ff; }
+
+        /* Hero Section */
+        .hero { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 10%; background: radial-gradient(circle at center top, #1a1a2e 0%, #050505 100%); }
+        .hero-content h1 { font-size: 4.5rem; font-weight: 700; margin-bottom: 15px; }
+        .hero-content p { font-size: 1.2rem; color: #b0b0b0; max-width: 650px; margin: 0 auto 35px auto; }
+        
+        .social-icons { margin-bottom: 40px; }
+        .social-icons a { font-size: 2rem; margin: 0 15px; color: #fff; transition: 0.3s; display: inline-block; }
+        .social-icons a:hover { color: #00d4ff; transform: translateY(-5px); }
+
+        /* Sections */
+        .section { padding: 100px 10%; text-align: center; }
+        .section-title { font-size: 2.8rem; margin-bottom: 50px; font-weight: 700; }
+        .bg-dark { background: #09090b; }
+
+        /* Skills */
+        .skills-container { display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; }
+        .skill-box { padding: 12px 25px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; font-size: 0.95rem; transition: 0.3s; }
+        .skill-box:hover { border-color: #00d4ff; color: #00d4ff; transform: translateY(-2px); }
+
+        /* Projects */
+        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        .project-card { background: rgba(255,255,255,0.02); padding: 40px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05); text-align: left; transition: 0.4s ease; }
+        .project-card:hover { border-color: #00d4ff; transform: translateY(-10px); background: rgba(255,255,255,0.04); }
+        .project-card i { font-size: 3rem; color: #00d4ff; margin-bottom: 25px; }
+        .project-card h3 { font-size: 1.6rem; margin-bottom: 12px; }
+        .project-card p { color: #aaa; font-size: 0.95rem; margin-bottom: 25px; }
+        .project-link { font-size: 0.95rem; font-weight: 600; color: #00d4ff; display: flex; align-items: center; gap: 8px; }
+
+        /* Contact */
+        .contact-container { max-width: 650px; margin: 0 auto; background: rgba(255,255,255,0.02); padding: 50px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05); }
+        .contact-info { margin: 30px 0; text-align: left; }
+        .contact-info p { margin: 15px 0; display: flex; align-items: center; gap: 15px; }
+        .contact-info i { color: #00d4ff; font-size: 1.2rem; }
+
+        footer { padding: 30px; text-align: center; color: #555; background: #020202; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">ANKIT<span class="highlight">.DEV</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h3>Explorer & Creator</h3>
+            <h1>I'm <span class="highlight">Ankit Kumar Suman</span></h1>
+            <p>B.Tech CSE Student focused on Web Development, Android Apps, and 3D Gaming Experiences.</p>
+            <div class="social-icons">
+                <a href="https://github.com/ankitkumarsuman1" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/ankit_kushwaha342/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/ankit-kumar-suman-6680053b2" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="https://drive.google.com/file/d/1MwwG25NNGkFRA62mhCnVN-QHjBPJHiZI/view?usp=drivesdk" target="_blank" class="btn">Resume <i class="fas fa-file-pdf"></i></a>
+        </div>
+    </section>
+
+    <section id="about" class="section bg-dark">
+        <h2 class="section-title">About Me</h2>
+        <div style="max-width: 800px; margin: 0 auto; color: #ccc;">
+            <p>Main Nasej, Bihar ka rehne wala ek Software Developer hu. Mujhe code ke jariye ideas ko reality me badalna pasand hai, chahe wo 3D games hon ya smart mobile applications.</p>
+            <div class="skills-container" style="margin-top: 40px;">
+                <span class="skill-box">C / Python</span>
+                <span class="skill-box">HTML / CSS / JS</span>
+                <span class="skill-box">Three.js</span>
+                <span class="skill-box">Android Studio</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2 class="section-title">My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <i class="fas fa-gamepad"></i>
+                <h3>CANNON-MASTER</h3>
+                <p>Ek high-octane 3D car game jo Three.js aur advanced logic par based hai. Isme smooth controls aur immersive environment hai.</p>
+                <a href="https://cannon-master.netlify.app" target="_blank" class="project-link">Play Now <i class="fas fa-external-link-alt"></i></a>
+            </div>
+            <div class="project-card">
+                <i class="fab fa-youtube"></i>
+                <h3>AI YouTube App</h3>
+                <p>Android Studio me banayi gayi ek innovative app jo YouTube experience ko optimize karti hai.</p>
+                <span class="project-link">Project Active</span>
+            </div>
+            <div class="project-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Marks Analyzer</h3>
+                <p>Hackathon winning project jo data ko visualize karke student performance analyze karta hai.</p>
+                <span class="project-link">Data Analysis</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-dark">
+        <div class="contact-container">
+            <h2 style="margin-bottom: 20px;">Contact Me</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> <a href="mailto:Ankitkumarsuman342@gmail.com">Ankitkumarsuman342@gmail.com</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Kudra, Kaimur, Bihar</p>
+            </div>
+            <a href="mailto:Ankitkumarsuman342@gmail.com" class="btn">Send Mail <i class="fas fa-paper-plane"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Ankit Kumar Suman | Software Developer</p>
+    </footer>
+
+</body>
+</html>
